@@ -19,6 +19,26 @@
   height: 40px;
   width: 100%;
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* 이미지와 텍스트 사이 간격 */
+  padding: 20px 0;
+}
+
+.logo-container img {
+  height: 60px;
+}
+
+.header-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;  /* 배경이 회색일 경우 잘 보이게 */
+}
+
+
     header {
       border-top: 1px solid white;
       padding: 40px 0;
@@ -85,8 +105,12 @@
   <div class="top-bar"></div> 
   
   <header>
-  <h1>서울과학기술대학교 북미 동문회</h1>
+  <div class="logo-container">
+    <img src="logo_header.png" alt="서울과학기술대학교 로고">
+    <span class="header-text">북미 동문회</span>
+  </div>
 </header>
+
 
 <nav> 
   <ul>
